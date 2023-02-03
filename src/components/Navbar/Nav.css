@@ -1,0 +1,59 @@
+
+.n_wrapper{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b2430;
+    color: white;
+    padding: 0 2rem;
+}
+
+.n_left,.n_right{
+  /* for width 50-50 , flex:1*/
+  flex: 1; 
+  display: flex;
+}
+.n_left{
+    align-items: center;
+    /* gap: 2rem; */
+}
+/* .n_icon{
+    width: 20px;
+    height: 20px;
+} */
+.n_name{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'DM Serif Text';
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+.n_right{
+    align-items: center;
+    justify-content: right;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'DM Serif Text';
+}
+/* .n_lists{
+    the lists div will take more width
+    flex: 10;
+} */
+.n_lists ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    transition: 0.3s ease-in-out;
+}
+.n_lists ul :hover{
+    cursor: pointer;
+    color: #17cf97;
+}
+.tag_name{
+    position: absolute;
+    font-size: 10px;
+    top: 30px;
+    left: 92px; 
+}
