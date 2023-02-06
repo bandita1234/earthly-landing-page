@@ -48,7 +48,7 @@
   display: flex;
   gap: 2rem;
   margin-right: 4rem;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 .n_lists ul :hover {
   cursor: pointer;
@@ -65,19 +65,23 @@
   display: none;
 }
 @media screen and (max-width: 768px) {
-    .n_right{
+    .n_lists{
         display: none
     }
-  /* .n_lists ul {
+    .n_lists.show_list{
+      display: flex
+    }
+  .n_lists.show_list ul {
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     padding-top: 90px;
     background-color: #1b2430f4;
     width: 50vw;
     height: 100vh;
-    margin: 0;
+    margin: 0px;
     gap: 70px;
-  } */
+  }
   .n_menu{
     display: flex;
     position: absolute;

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../Navbar/Nav.css";
 import logo_img from "../../images/Earthly_Logo.webp";
 
-import {FaBars} from 'react-icons/fa';
+import {FaBars, FaTimes} from 'react-icons/fa';
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
-  
   const [navBackground, setNavBackground] = useState(false);
+
   const setNavbar = ()=>{
     if(window.scrollY>86){
       setNavBackground(true)
@@ -19,7 +19,7 @@ const Nav = () => {
     window.addEventListener('scroll', setNavbar);
     // eslint-disable-next-line
   }, [])
-
+console.log(showMenu);
   return (
     <div className={`n_wrapper ${navBackground?"solid": "trans"}`}>
       <div className="n_left">
@@ -31,7 +31,7 @@ const Nav = () => {
         Sustainable products at affordable prices</p>
       </div>
       <div className="n_right">
-        <div className="n_lists">
+        <div className={`n_lists ${showMenu && "show_list"}`}>
           <ul style={{ listStyleType: "none" }}>
             <li>Home</li>
             <li>About</li>
@@ -40,8 +40,8 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-      <div className="n_menu" >
-        <FaBars size={'30px'}/>
+      <div className="n_menu" onClick={()=>{setShowMenu(!showMenu)}}>
+        {!showMenu?<FaBars size={'30px'}/>:<FaTimes size={'30px'} />}
       </div>
     </div>
  
