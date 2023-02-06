@@ -1,0 +1,36 @@
+.container{
+    width:90%;
+    margin:auto;
+}
+.products_div{
+    display: flex;
+    justify-content: space-around;
+
+     /* The “clear: both” means floating the elements are not allowed to float on both sides. */
+    /* clear: both; */
+    margin: 50px 0;
+    height: 100%;
+}
+.products_detail{
+    width: 50%;
+}
+.products_img{
+    width: 45%;
+}
+.details_container{
+    width: 450px;
+}
+.products_img{
+    object-fit: cover;
+}
+.products_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.products_div:nth-child(odd) {
+    flex-direction: row;
+}
+.products_div:nth-child(even) {
+    flex-direction: row-reverse;
+}

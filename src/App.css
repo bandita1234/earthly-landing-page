@@ -4,4 +4,5 @@
     overflow: hidden;
   color: var(--black);
   font-family: 'DM Serif Text';
+  background-color: hsl(193, 100%, 96%);
   }
