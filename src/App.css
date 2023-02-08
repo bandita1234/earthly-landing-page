@@ -1,8 +1,14 @@
-
-  .App{
+ html{
+  scroll-behavior: smooth;
+ }
+ .App{
     /* padding: 0.5rem 3.5rem; */
     overflow: hidden;
-  color: var(--black);
   font-family: 'DM Serif Text';
-  background-color: hsl(193, 100%, 96%);
+  /* background-color: hsl(193, 100%, 96%); */
+  background-image: url("https://www.bypeople.com/wp-content/uploads/2015/05/css-dark-chain-background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #F2AA4CFF;
   }

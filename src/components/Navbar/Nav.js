@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../Navbar/Nav.css";
 import logo_img from "../../images/Earthly_Logo.webp";
-
 import {FaBars, FaTimes} from 'react-icons/fa';
 
 const Nav = () => {
@@ -33,10 +32,10 @@ console.log(showMenu);
       <div className="n_right">
         <div className={`n_lists ${showMenu && "show_list"}`}>
           <ul style={{ listStyleType: "none" }}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Products</li>
-            <li>Contact Us</li>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#productsIntro">Our Product</a>
+            <a href="#contact">Contact Us</a>
           </ul>
         </div>
       </div>

@@ -8,17 +8,11 @@
 .About_text,.About_img{
     width: 50%;
 }
-.About_text h3{
-    font-size: 4rem;
-    margin-top: 2rem;
-    text-decoration: underline;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-.About_text p{
+.second_para p{
     font-size: 1.5rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-top: 0;
+    margin-bottom: 60px;
 }
 .About_img img{
     height: 100vh;
@@ -28,7 +22,8 @@
 .first_para p{
    font-size: 3rem;
    font-weight: 700;
-   color: rgb(20, 118, 30);
+   color: rgb(111, 192, 119);
+   margin-bottom: 6px;
 }
 .button{
     border-radius: 34px;
@@ -40,4 +35,16 @@
     box-shadow: 0 0 10px rgb(109, 82, 32);
     text-decoration: none;
     font-weight: lighter;
+}
+.button:hover{
+    font-size: 16px;
+}
+
+.Typewriter{
+    font-size: 4rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    margin-bottom: 0;
+    text-align: center;
+    color:#C780FA;
 }

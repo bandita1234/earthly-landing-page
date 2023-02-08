@@ -16,7 +16,7 @@ import "swiper/swiper-bundle.min.css";
 
 const MainSlider = () => {
   return (
-    <div className="heroSlide">
+    <div className="heroSlide" id="hero">
       <Swiper
         modules={[Autoplay, Navigation, Pagination, A11y, EffectCube]}
         spaceBetween={50}

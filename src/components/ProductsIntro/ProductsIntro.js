@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../ProductsIntro/ProductsIntro.css";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
@@ -22,9 +25,14 @@ import "swiper/swiper-bundle.min.css";
 import { icons } from "react-icons";
 
 const ProductsIntro = () => {
+
+  useEffect(() => {
+    AOS.init({duration:3000,offset:300})
+  }, [])
+
   return (
-    <div className="ProductsIntro">
-      <div className="kit_intro">
+    <div className="ProductsIntro" id="productsIntro">
+      <div className="kit_intro" data-aos = "fade-right">
         <h1>Sustainability Starter Kit</h1>
         <h3>This starter kit is all you need to start the revolution!</h3>
 
@@ -56,9 +64,14 @@ const ProductsIntro = () => {
           </div>
         </div>
         <div className="btn">
-        <a className="button" href="https://www.earthly.ie/product-page/sustainability-starter-pack">FIND OUT MORE!</a>
+          <a
+            className="button"
+            href="https://www.earthly.ie/product-page/sustainability-starter-pack"
+          >
+            FIND OUT MORE!
+          </a>
         </div>
-        </div>
+      </div>
 
       <div className="kit_img">
         <Swiper

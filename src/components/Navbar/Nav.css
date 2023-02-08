@@ -52,8 +52,12 @@
 }
 .n_lists ul :hover {
   cursor: pointer;
-  color: #17cf97;
+  color: #4f9fd4;
   text-decoration: underline;
+}
+.n_lists ul a{
+  text-decoration: none;
+  color: #fff;
 }
 .tag_name {
   position: absolute;
