@@ -15,7 +15,7 @@
     margin-bottom: 60px;
 }
 .About_img img{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     border-radius: 30px;
 }
@@ -25,7 +25,7 @@
    color: rgb(111, 192, 119);
    margin-bottom: 6px;
 }
-.button{
+/* .button{
     border-radius: 34px;
     border: none;
     color: black;
@@ -38,13 +38,38 @@
 }
 .button:hover{
     font-size: 16px;
-}
+} */
 
 .Typewriter{
     font-size: 4rem;
     margin-top: 2rem;
     text-decoration: underline;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     text-align: center;
     color:#C780FA;
+    margin:auto;
+}
+
+@media screen  and (max-width:768px){
+    .About_container{
+        flex-direction: column-reverse;
+    }
+    .About_img img{
+        display: none;
+    }
+    .Typewriter{
+        font-size: 3rem;
+        margin-top: 0;
+    }
+    .About_text{
+        width: 100vw;
+        padding-left: 8px;
+    }
+    .btn{
+        margin: 0px 0 10px;
+       }
+    .second_para p{
+        margin-bottom: 40px;
+    }
+    
 }

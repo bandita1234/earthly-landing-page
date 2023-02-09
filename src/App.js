@@ -5,16 +5,18 @@ import MainSlider from "./components/MainSlider/MainSlider";
 import Products from "./components/Products/Products";
 import ProductsIntro from "./components/ProductsIntro/ProductsIntro";
 import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-        <Nav />
-        <MainSlider />
-        <About />
-        <ProductsIntro />
-        <Products />
+    <Nav/>
+    <MainSlider/>
+    <About/>
+    <ProductsIntro/>
+    <Products/>
+      
+        <Footer/>
     </div>
   );
 }

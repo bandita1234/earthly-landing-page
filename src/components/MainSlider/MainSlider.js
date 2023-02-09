@@ -21,10 +21,10 @@ const MainSlider = () => {
         modules={[Autoplay, Navigation, Pagination, A11y, EffectCube]}
         spaceBetween={50}
         slidesPerView={1}
-        //   autoplay={{
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        //   }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
         navigation
         loop
         pagination={{ clickable: true }}

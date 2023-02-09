@@ -35,7 +35,7 @@ console.log(showMenu);
             <a href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#productsIntro">Our Product</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#footer">Contact Us</a>
           </ul>
         </div>
       </div>
